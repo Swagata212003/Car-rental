@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rent.co</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">RENT.CO</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About us</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Login/Signup</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Pricing</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-fort js-fullheight order-md-last img" style="background-image:url(https://manalimotorbikerental.com/wp-content/uploads/2023/01/Manali-motot-bike-rental33.jpg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading"></span>
+			            <h1 class="mb-4 mt-3">We understand <span></span>bike rental needs</h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Long term rentals ',
+						'Rent Today,own tomorrow  ',
+						'Self ride bike rentals   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="" class="img-fluid rounded-circle b-shadow-a" alt="">
+									  </div>
+									</div>
+									
+									  </div>
+									</div>
+								  </div>
+
+								
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About us</h1>
+								<h2 class="mb-4">About us</h2>
+								
+								<p></p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									
+									
+								</ul>
+							</div>
+						</div>
+
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+    </section> 
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Login/Signup</h1>
+            <h2 class="mb-4">Login/Signup</h2>
+           
+          </div>
+        </div>
+
+		
+
+			<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Login here</a></p>
+    			</div>
+    		</div>
+
+		<br>
+		<br>
+
+		
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Pricing</h1>
+            <h2 class="mb-4">Pricing</h2>
+            <p>Below are the bikes that can be yours.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('data:image/jpeg;base64,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');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="#">Yamaha R15 V4-500rs/hr</a></h3>
+                <p>
+					The Yamaha R15 V4 is powered by a 155cc liquid-cooled, SOHC, single-cylinder engine featuring Variable Valve Actuation (VVA), producing 18.6 PS of power and 14.1 Nm of torque, paired with a 6-speed gearbox. It showcases an aggressive design with dual LED headlamps, an aerodynamic fairing, and sporty graphics. The bike is equipped with a digital LCD instrument cluster, Bluetooth connectivity, and multiple ride modes for a versatile riding experience. Safety features include dual-channel ABS, a slipper clutch, and a delta box frame, providing enhanced stability and control.
+					</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYFqBb39Ep4aOuRsHPiQW9va3M48pXn3N9AQ&s');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="#">TVS Apache RR 310-700rs/hr</a></h3>
+                <p>The TVS Apache RR 310 is powered by a 312.2cc liquid-cooled single-cylinder engine, producing 34 PS of power and 27.3 Nm of torque, coupled with a 6-speed gearbox and slipper clutch for smooth gear shifts. It boasts aggressive, aerodynamic styling with dual LED projector headlamps and signature DRL, offering a striking presence on the road. The motorcycle is equipped with advanced technology, including a 5-inch TFT display with Bluetooth connectivity and multiple ride modes for a customizable riding experience. Safety features include dual-channel ABS, glide-through technology, and a lightweight trellis frame that enhances stability and control.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('https://5.imimg.com/data5/UO/HS/MY-27656210/bajaj-pulsar-bike-200-cc.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="#">Bajaj Pulsar-400rs/hr</a></h3>
+                <p>The Bajaj Pulsar 200cc features a 199.5cc liquid-cooled, single-cylinder engine with triple spark technology, producing 24.5 PS of power and 18.5 Nm of torque, and is paired with a 6-speed gearbox for smooth acceleration. It boasts sporty and aggressive styling with sharp lines, LED headlamps, and split seats. The motorcycle is equipped with a digital instrument cluster and LED lighting for modern functionality. Safety is enhanced with dual-channel ABS and a perimeter frame, which provides improved handling and stability.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		
+	  </div>
+    </section>
+
+	
+				 <div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2><span>   </span> </h2>
+						<div class="heading"> <h4> </h4>
+						<br>
+						
+						</div>
+					</div>
+				</div> 
+			 </div> 
+		</div> 
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact us</h1>
+            <h2 class="mb-4">Contact us</h2>
+            <p>Below are the details to reach out to us!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>West Bengal, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+91 xxxxxxxxxx</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">xxxxxxxxx@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-linkedin"></span>
+          		</div>
+          		<h3 class="mb-4">LinkedIn</h3>
+	            <p><a href="#">Link</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfmQuMvVnR8c5okcW_rF-GeVPpIkyCWNaZQB1EHs7ko4n9pBg/viewform?usp=sf_link" class="btn btn-primary py-3 px-5">Click Here</a>
+						
+					 </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find us on  </li>
+					  
+					  <li class="ftco-animate"><a href="#"><span class="icon-linkedin"></span></a></li>  
+					
+				      <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+				
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p>
+	 <script></script>   
+	</p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
